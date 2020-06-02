@@ -13,7 +13,13 @@
 		<script src="js/main.js" defer></script>
 	</head>
 	<body>
-		<h1 class="my-5 ml-4">Web-QR-Scanner</h1>
+		<h1 class="my-5 ml-4 text-center">Web-QR-Scanner</h1>
+		<div class="button-container ml-3 mb-3 d-flex justify-content-center">
+			<button class="btn btn-primary m-1" id="start">Start Stream</button>
+			<button class="btn btn-outline-primary m-1" id="snap">
+				Snap Photo
+			</button>
+		</div>
 		<div class="camera-container">
 			<video
 				class="border"
@@ -22,11 +28,8 @@
 				height="480"
 				autoplay
 			></video>
-			<div class="button-container">
-				<button id="snap">Snap Photo</button>
-				<button id="start">Start Stream</button>
-			</div>
-			<canvas id="canvas" width="640" height="480"></canvas>
+
+			<canvas id="canvas" width="680" height="680"></canvas>
 		</div>
 	</body>
 </html>

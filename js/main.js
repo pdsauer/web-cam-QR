@@ -4,6 +4,11 @@ var video = document.getElementById('video');
 let start = document.querySelector('#start').addEventListener('click', () => {
 	cameraRoll();
 });
+
+// set Video width to window width
+video.setAttribute('width', window.innerWidth);
+video.setAttribute('height', window.innerWidth);
+
 // Trigger photo take
 document.getElementById('snap').addEventListener('click', () => {
 	canvasContext.drawImage(video, 0, 0, 640, 480);
