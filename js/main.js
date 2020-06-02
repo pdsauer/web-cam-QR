@@ -21,7 +21,7 @@ const cameraRoll = () => {
 				video: {
 					width: { ideal: 680 },
 					height: { ideal: 680 },
-					facingMode: { ideal: 'environment' },
+					facingMode: 'user',
 				},
 			})
 			.then(function (stream) {
