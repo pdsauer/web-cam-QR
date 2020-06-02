@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Web-QR-Scanner</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+		/>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<div class="container mt-4">
+			<h1>Web-QR-Scanner</h1>
+			<div class="camera-container">
+				<video id="video" width="640" height="480" autoplay></video>
+				<button id="snap">Snap Photo</button>
+				<canvas id="canvas" width="640" height="480"></canvas>
+			</div>
+		</div>
+	</body>
+</html>
