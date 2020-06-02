@@ -28,6 +28,9 @@ const cameraRoll = () => {
 				//video.src = window.URL.createObjectURL(stream);
 				video.srcObject = stream;
 				video.play();
+			})
+			.catch((err) => {
+				console.log(err);
 			});
 	}
 };
