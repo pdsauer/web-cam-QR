@@ -13,14 +13,20 @@
 		<script src="js/main.js" defer></script>
 	</head>
 	<body>
-		<div class="container mt-4">
-			<h1>Web-QR-Scanner</h1>
-			<div class="camera-container">
-				<video id="video" width="640" height="480" autoplay></video>
+		<h1 class="my-5 ml-4">Web-QR-Scanner</h1>
+		<div class="camera-container">
+			<video
+				class="border"
+				id="video"
+				width="640"
+				height="480"
+				autoplay
+			></video>
+			<div class="button-container">
 				<button id="snap">Snap Photo</button>
 				<button id="start">Start Stream</button>
-				<canvas id="canvas" width="640" height="480"></canvas>
 			</div>
+			<canvas id="canvas" width="640" height="480"></canvas>
 		</div>
 	</body>
 </html>
