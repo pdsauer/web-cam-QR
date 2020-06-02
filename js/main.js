@@ -16,7 +16,7 @@ document.getElementById('snap').addEventListener('click', () => {
 const cameraRoll = () => {
 	if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 		// check if back camera exists
-		navigator.mediaDevices.enumerateDevices().then((d) => console.log(d));
+		navigator.mediaDevices.enumerateDevices().then((d) => console.table(d));
 
 		// Not adding `{ audio: true }` since we only want video now
 		navigator.mediaDevices
